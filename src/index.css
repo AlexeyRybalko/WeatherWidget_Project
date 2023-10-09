@@ -102,6 +102,14 @@ h2 {
   margin: 1rem auto;
 }
 
+.top .location,
+.forecast .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 156px;
+}
+
 .app .location,
 .error {
   text-align: center;
@@ -155,7 +163,7 @@ h2 {
 
 .weather-list {
   height: 220px;
-  margin: 160px 20px 70px;
+  margin: 160px 20px 15px;
   padding: 20px 20px;
   display: flex;
   justify-content: space-evenly;
@@ -203,7 +211,7 @@ h2 {
 
 @media screen and (max-width: 615px) {
   .app {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .container {
