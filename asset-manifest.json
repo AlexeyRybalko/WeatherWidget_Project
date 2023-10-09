@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/WeatherWidget_Project/static/css/main.ff93afda.css",
+    "main.css": "/WeatherWidget_Project/static/css/main.c2723ae7.css",
     "main.js": "/WeatherWidget_Project/static/js/main.35e434ae.js",
     "static/media/clouds.jpg": "/WeatherWidget_Project/static/media/clouds.fe6cd0d8bcd5c44cd7c0.jpg",
     "index.html": "/WeatherWidget_Project/index.html",
-    "main.ff93afda.css.map": "/WeatherWidget_Project/static/css/main.ff93afda.css.map",
+    "main.c2723ae7.css.map": "/WeatherWidget_Project/static/css/main.c2723ae7.css.map",
     "main.35e434ae.js.map": "/WeatherWidget_Project/static/js/main.35e434ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff93afda.css",
+    "static/css/main.c2723ae7.css",
     "static/js/main.35e434ae.js"
   ]
 }
