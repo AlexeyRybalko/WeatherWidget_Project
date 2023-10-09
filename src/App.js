@@ -9,11 +9,11 @@ export const locationType = {
   custom: "custom",
 };
 
-const key = "269dba5452f7e8fb9d9acf5fd23b66cd";
+const key = '269dba5452f7e8fb9d9acf5fd23b66cd'
 
 function App() {
   const [data, setData] = useState(null);
-  const [forecastData, setForecastData] = useState(null);
+  const [forecastData, setForecastData] = useState(null)
   const [location, setLocation] = useState("");
   const [error, setError] = useState("");
 
@@ -48,7 +48,7 @@ function App() {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?${locationParams}&lang=ru&&units=metric&appid=${key}`;
 
-    const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?${locationParams}&lang=ru&&units=metric&appid=${key}`;
+    const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?${locationParams}&lang=ru&&units=metric&appid=${key}`
 
     axios
       .get(url)
@@ -61,7 +61,7 @@ function App() {
         setError("Ошибка ввода местоположения! Попробуйте еще раз!");
       });
 
-    axios
+      axios
       .get(urlForecast)
       .then((response) => {
         setForecastData(response.data);

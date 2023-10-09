@@ -203,22 +203,44 @@ h2 {
 
 @media screen and (max-width: 615px) {
 
-  .weather-list {
-    margin: 160px 0 70px;
+  .container {
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .forecast {
+    height: 500px;
+  }
+
+  .app .temp {
+    margin: 10px auto;
+  }
+
+  .temp h2 {
+    font-size: 5rem;
+  }
+
+  .app .top {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom {
     padding: 20px 0;
+    margin: 16px auto 70px;
+  }
+
+  .weather-list {
+    margin: 50px 0 70px;
+    padding: 20px 10px;
   }
   
   .weather-item {
-    width: 30px;
     font-size: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
   
   .weather-item:nth-child(n + 2) {
-    margin-left: 15px;
+    margin-left: 5px;
   }
   
   .forecast-wind {
