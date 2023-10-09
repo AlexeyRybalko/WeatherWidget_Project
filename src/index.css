@@ -88,7 +88,7 @@ h2 {
 
 .container {
   max-width: 700px;
-  height: 780px;
+  height: 750px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -199,4 +199,40 @@ h2 {
 .forecast-wind .wind-icon {
   transform: scale(1.7);
   margin-right: 15px;
+}
+
+@media screen and (max-width: 615px) {
+
+  .weather-list {
+    margin: 160px 0 70px;
+    padding: 20px 0;
+  }
+  
+  .weather-item {
+    width: 30px;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .weather-item:nth-child(n + 2) {
+    margin-left: 15px;
+  }
+  
+  .forecast-wind {
+    white-space: nowrap;
+  }
+  
+  .forecast-humidity .humidity-icon,
+  .forecast-wind .wind-icon {
+    transform: scale(2.5);
+    margin-right: 15px;
+  }
+
+  .bottom p {
+    font-size: 1.2rem;
+  }
+
 }
