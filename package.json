@@ -21,6 +21,7 @@
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
+  "homepage": "https://AlexeyRybalko.github.io/WeatherWidget_Project",
   "repository": {
     "url": "git+https://github.com/AlexeyRybalko/WeatherWidget_Project.git"
   },
