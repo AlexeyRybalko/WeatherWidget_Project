@@ -202,10 +202,21 @@ h2 {
 }
 
 @media screen and (max-width: 615px) {
+  .app {
+    overflow-y: hidden;
+  }
 
   .container {
-    height: auto;
-    justify-content: space-between;
+    height: 600px;
+    justify-content: flex-start;
+  }
+
+  .forecast .location,
+  .top .location {
+    height: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .forecast {
@@ -227,11 +238,11 @@ h2 {
 
   .bottom {
     padding: 20px 0;
-    margin: 16px auto 70px;
+    margin: 30px auto 40px;
   }
 
   .weather-list {
-    margin: 50px 0 70px;
+    margin: 70px 5px 0px;
     padding: 20px 10px;
   }
   

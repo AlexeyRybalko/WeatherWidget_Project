@@ -74,6 +74,7 @@ function App() {
 
     setLocation("");
     setData(null);
+    setError(null)
   };
 
   return (
