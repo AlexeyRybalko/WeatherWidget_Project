@@ -1,13 +1,202 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.app:before {
+  content: "";
+  background: url("./assets/clouds.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.geolocation,
+.forecast-switch-button {
+  width: 14rem;
+  border-radius: 25px;
+  margin-top: 0.7rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.geolocation:hover,
+.forecast-switch-button:hover {
+  filter: contrast(0.5);
+}
+
+.app input {
+  width: 20rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  max-width: 700px;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .location,
+.error {
+  text-align: center;
+  margin: 0 2rem;
+}
+.error-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 2rem;
+  color: rgb(216, 83, 83);
+}
+
+.app .description p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.app .temp {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bottom p {
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.forecast-switch-button {
+  margin: 20px auto;
+}
+
+.weather-list {
+  height: 220px;
+  margin: 160px 20px 70px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.weather-item {
+  width: 140px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-item:nth-child(n + 2) {
+  margin-left: 10px;
+}
+
+.forecast-description {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast-temp p {
+  font-size: 1.5rem;
+}
+
+.forecast-humidity p,
+.forecast-wind p {
+  display: flex;
+  align-items: center;
+}
+
+.forecast-humidity .humidity-icon,
+.forecast-wind .wind-icon {
+  transform: scale(1.7);
+  margin-right: 15px;
 }
